@@ -10,3 +10,13 @@ library(magic)
 magic(6)
 
 installed.packages()
+
+install.packages("devtools")
+
+library(devtools)
+install_version("rmarkdown", version = 1.8)
+
+
+install.packages("tinytex")
+
+tinytex::install_tinytex()
