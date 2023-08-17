@@ -1,3 +1,5 @@
+a = 6
+b <- 4
 opBasic = function(a,b){
   print("Suma")
   print(a+b)
@@ -13,3 +15,4 @@ opBasic = function(a,b){
   print(paste(sprintf("%i : %i = ",b,a),b%/%a))
   print(paste("con resto ",b%%a))
 }
+opBasic(a,b)

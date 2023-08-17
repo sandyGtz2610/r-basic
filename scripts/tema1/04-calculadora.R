@@ -48,11 +48,13 @@ NaN
 2 ^(-15) # 3.051758e-05 = 0.00003051758
 
 c(2^30, 2^(-15), 1, 2, 3/2)
+c(1,2,3+2,3)
 
 
 sqrt(25)
 
 exp(1)
+log(exp(1))
 
 log(pi)
 
@@ -61,6 +63,7 @@ log(32, 2)
 log(32, base = 2)
 log(base=2, 32)
 
+#valor_absoluto
 abs(-pi)
 
 factorial(7)
@@ -79,7 +82,9 @@ log(4^6, 4)
 
 choose(5,2)
 
+#R calcula en radianes
 sin(60*pi/180)
+##pasar a grados es multiplicar por 60 y dividir entre 180
 
 cos(60*pi/180)
 
@@ -103,7 +108,9 @@ floor(sqrt(2))
 ceiling(sqrt(2))
 trunc(sqrt(2))
 
+#No es cero porque va a cumulando los errores
 sqrt(2)^2-2
+
 
 round(sqrt(2), 4)^2
 
@@ -141,6 +148,7 @@ edad <- 30
 
 nombre = "Juan Gabriel"
 
+#Los nombres de variables si se sdistinguen por mayusculas y minusculas
 HOLA = 1
 hola = 5
 
@@ -152,6 +160,15 @@ x = x^2
 
 x = sqrt(x)
 
+## Function Sandy 
+san_fun = function(n){
+  choose(n,2)
+}
+san_fun(3)
+san_fun = function(n){
+  n*2
+}
+san_fun(3)
 ## Función f(x) = x^3 - (3^x)* sen(x)
 f = function(x) {
   x^3 - (3^x) * sin(x)
@@ -188,12 +205,15 @@ suma5 <- function(numero){
 
 suma5(3)
 
+##variables y funciones creadas
 ls()
 
+##borra variable local
 rm(product)
 
 ls()
 
+##Eliminar todas las variables, o usar la escobita en el entorno
 rm(list = ls())
 
 class(3+2i)
